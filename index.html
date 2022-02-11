@@ -4,16 +4,28 @@
         <div class="bg-image"></div>
         <div class="container">
             <div class="media">
+
+
+<!-- _____________________________________Intro_____________________________________________________ -->
 <pre class="intro">
-<i style="color: #96FF74">me@MyWebSite</i>:<i style="color: #52B7E1 ">~</i>$ cat intro.txt
+<m style="color: #96FF74">me@MyWebSite</m>:<m class="tooltip" style="color: #52B7E1 ">
+/JEREMY_NGUYEN<span class="tooltiptext">This is my name</span></m>$ cat intro.txt
+
 
 Hi, I'm Jeremy Nguyen and I am a computer science student at UT Dallas
-I also work at the Texas Army National Guard as a construction engineer
-I am experienced in C, C++, Java, JavaScript
-If you would like to know more about me, please take a look at my <a href="Resume.pdf" class="link3">resume</a>
 
-<div class="typing"><i style="color: #96FF74">me@MyWebSite</i>:<i style="color: #52B7E1 ">~</i>$ More about me and my projects on <a href="https://www.linkedin.com/in/jeremu2907/" class="link">my LinkedIn</a> and <a href="https://github.com/jeremu2907" class="link2">GitHub</a></div>
+I also work at the Texas Army National Guard as a construction engineer
+
+I am experienced in C, C++, Java, JavaScript
+
+If you would like to know more about me, please take a look at my <a href="Resume.pdf" class="link3 tooltip"><u>resume<span class="tooltiptext">This is my resume</span></u></a>
+
+
+<div class="typing"><m style="color: #96FF74">me@MyWebSite</m>:<m style="color: #52B7E1 ">/JEREMY_NGUYEN</m>$ More about me and my projects on my
+<a href="https://www.linkedin.com/in/jeremu2907/" class="link"> LinkedIn</a> and <a href="https://github.com/jeremu2907" class="link2">GitHub</a></div>
 </pre>
+
+<!-- ________________________________________________________________________________________________________ -->
             </div>
         </div>
     </body>
@@ -31,20 +43,21 @@ If you would like to know more about me, please take a look at my <a href="Resum
 
     .media {
         position:fixed;
-        max-width: 1000px;
+        /* max-width: 1200px; */
+        width: 52%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
         color: white;
-        background: rgba(10,10,10,0.5);
+        background: rgba(5,5,5,0.5);
         padding: 20px;
     }
     .intro {
         font-size: 17px;
     }
     .container {
-        max-width: 1000px;
+        /* max-width: 900px; */
     }
     .link {
         color:#1FA0B1;
@@ -60,8 +73,8 @@ If you would like to know more about me, please take a look at my <a href="Resum
     }
 
     .typing {
-        width: 71ch;
-        animation: typing 3.5s steps(37), blink .5s step-end infinite alternate;
+        width: 84ch;
+        animation: typing 4s steps(39), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 1ch solid;
@@ -70,7 +83,7 @@ If you would like to know more about me, please take a look at my <a href="Resum
 
     @keyframes typing {
         from {
-            width: 16ch;
+            width: 29ch;
         }
     }
         
@@ -78,5 +91,36 @@ If you would like to know more about me, please take a look at my <a href="Resum
         50% {
             border-color: transparent;
         }
+    }
+        /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgba(20,20,20,0.4);
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+
+        width: 190px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -90px; 
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
     }
 </style>
