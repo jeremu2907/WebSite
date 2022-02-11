@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="height:100%;background-color: black;">
+    <body style="height:100%;margin: 0;max-width: 100%;">
+        <div class="bg-image"></div>
+        <div class="container">
+            <div class="media">
+<pre class="intro">
+<i style="color: #96FF74">me@MyWebSite</i>:<i style="color: #52B7E1 ">~</i>$ cat intro.txt
+
+Hi, I'm Jeremy Nguyen and I am a computer science student at UT Dallas
+I also work at the Texas Army National Guard as a construction engineer
+I am experienced in C, C++, Java, JavaScript
+If you would like to know more about me, please take a look at my <a href="Resume.pdf" class="link3">resume</a>
+
+<div class="typing"><i style="color: #96FF74">me@MyWebSite</i>:<i style="color: #52B7E1 ">~</i>$ More about me and my projects on <a href="https://www.linkedin.com/in/jeremu2907/" class="link">my LinkedIn</a> and <a href="https://github.com/jeremu2907" class="link2">GitHub</a></div>
+</pre>
+            </div>
+        </div>
+    </body>
+</html>
+<style>
+    .bg-image {
+        background-image: url("IMG_8476.jpeg");
+        filter:brightness(18%) blur(10px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    .media {
+        position:fixed;
+        max-width: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        color: white;
+    }
+    .intro {
+        font-size: 17px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .link {
+        color:#1FA0B1;
+        text-decoration: none;
+    }
+    .link2 {
+        color: #9065D6;
+        text-decoration: none;
+    }
+    .link3{
+        color: #F74545;
+        text-decoration: none;
+    }
+
+    .typing {
+        width: 71ch;
+        animation: typing 3.5s steps(37), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 1ch solid;
+        font-family: monospace;
+    }
+
+    @keyframes typing {
+        from {
+            width: 16ch;
+        }
+    }
+        
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+</style>
